@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>5th ka phela</title>
+        <script>
+                function myFunction() 
+                {
+                var fn = document.getElementById("fname").value;
+                var mn = document.getElementById("mname").value;
+                var ln = document.getElementById("lname").value;
+                document.getElementById("fname").disabled=true;
+                document.getElementById("fname").style.backgroundColor="red";
+                document.getElementById("mname").disabled=true;
+                document.getElementById("mname").style.backgroundColor="red";
+                document.getElementById("lname").disabled=true;
+                document.getElementById("lname").style.backgroundColor="red";
+                
+                
+                document.getElementById("email").value=fn+"."+ln+"@msbte.org";
+                }
+        </script>
+    </head>
+    <body>
+        <form><br>
+            First Name: <input type ="text" id = "fname"><br><br>
+            Middle Name: <input type ="text" id = "mname"><br><br>
+            Last Name: <input type ="text" id = "lname"><br><br>
+            <input type="button" value="Submit" name="Submit" onclick="myFunction()"><br><br>
+            Email: <input type ="text" id = "email"><br><br>
+        </form>
+    </body>
+</html>

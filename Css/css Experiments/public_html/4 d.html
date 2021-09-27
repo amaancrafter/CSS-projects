@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Convert</title>
+        <script>
+            function num()
+            {
+                var a = 'ABC';
+            var b = a.charCodeAt(0);
+            var c = a.charCodeAt(1);
+            var d = a.charCodeAt(2);
+            alert(b+", "+c+", "+d);
+            }
+            function char()
+            {
+                var s = String.fromCharCode(65, 78, 73, 82, 85, 68, 68, 72, 65);
+                alert(s);
+            }
+            
+        </script>
+    </head>
+    <body>
+        Change "ABC" into ASCII Unicode:<br><br> 
+        <input type="button" name = "Convert" onclick="num(this)" value = "Convert"><br><br>
+        Change "65, 78, 73, 82, 85, 68, 68, 72, 65" into character: <br><br>
+        <input type="button" name = "Convert" onclick="char(this)" value = "Convert"> 
+    </body>
+</html>

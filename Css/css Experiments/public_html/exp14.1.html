@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            l1 = new Array('Sunil','Aditya','Siddharth');
+            l2 = new Array('Archana','Aditi','Selena');
+            function DS(Class)
+            {
+                Cathegory = Class.options[Class.selectedIndex].value;
+                if(Cathegory=='1')
+                {
+                    for(i=1;i<=l1.length;i++)
+                    {
+                        document.Form1.Students.options[i] = new Option(l1[i-1]);
+                    }
+                }
+                if(Cathegory=='2')
+                {
+                    for(i=1;i<=l2.length;i++)
+                    {
+                        document.Form1.Students.options[i] = new Option(l2[i-1]);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload="document.Form1.ClassList.selectedIndex=0">
+        <h2>Dynamically Changing Menu</h2>
+        <form name="Form1">
+            <select name="ClassList" onchange="DS(this)">
+                <option value="">Class</option>
+                <option value="1">Boys</option>
+                <option value="2">Girls</option>
+            </select>
+            <select name="Students" onchange="DS(this)">
+                <option value="0">Students</option>
+            </select>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <title>
+        Window Object
+    </title>
+    <script>
+        var mywin = window.open("","My Window", "width=500,height = 300,top = 50, left = 75,status = no");
+        mywin.document.write("<br>Screen Width(outer) = " + mywin.outerWidht);
+        mywin.document.write("<br>Screen Width(inner) = " + mywin.innerWidth);
+        mywin.document.write("<br>Screen height(outer) = " + mywin.outerHeight);
+        mywin.document.write("<br>Screen height(inner) = " + mywin.innerHeight);
+        mywin.document.write("<br>Screen X = " + mywin.screenX);
+        mywin.document.write("<br>Screen Y = " + mywin.screenY);
+        mywin.document.write("<br>Screen X coordinate = " + mywin.screenLeft);
+        mywin.document.write("<br>Screen Y coordinate = " + mywin.screenTop);
+        mywin.status = "Status is ok";
+        mywin.document.write("<br>Window Status = " + mywin.status);
+    </script>
+</html>

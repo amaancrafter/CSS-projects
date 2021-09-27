@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Cities
+        </title>
+    </head>
+    <body>
+        <form action="" name="Form1">
+            Select City :
+            <select name="MenuChoice" onchange="DS(this)">
+                <option value=""></option>
+                <option value = "1">New Delhi</option>
+                <option value = "2">Mumbai</option>
+                <option value = "3">Bangalore</option>
+            </select>
+        </form>
+        <script>
+            function DS(Class)
+            {
+                Cathegory = Class.options[Class.selectedIndex].value;
+                if(Cathegory=='1')
+                {
+                    document.write("<html><head><body><table><tr><td><img src = nd.jpg></td><td>Delhi is beautifull</td></tr></table>");
+                }
+                else if(Cathegory=='2')
+                {
+                    document.write("<html><head><body><table><tr><td><img src = mm.jpg></td><td>Mumbai is beautifull</td></tr></table>");
+                }
+                else if(Cathegory=='3')
+                {
+                    documen.write("<html><head><body><table><tr><td><img src = bn.jpg></td><td>Banglore is beautifull</td></tr></table>");
+                }
+            }
+        </script>
+</body>
+</html>

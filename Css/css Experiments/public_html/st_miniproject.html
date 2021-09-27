@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h1 style="font-family:Times New Roman; text-align: center; font-size: 20pt; color: #00F00;">
+            Simple Login Page
+        </h1>
+        <form name="login">
+            Username  <input type='text' name ='userid'><br><br>
+            Password  <input type ='password' name ='psw'><br><br>
+            <input type="button" name="Login" value="Login" onclick="check(this.form)">
+            <input type="reset" name="Cancel" value="Cencel">
+        </form>
+        <script>
+            function check(form)
+            {
+                if(form.userid.value == "crafter@gmail.com" && form.psw.value=="1234")
+                {
+                    alert("Successfull Login");
+                    window.open(run.html);
+                }
+                else
+                {
+                    alert("Please Try Again");
+                }
+            }
+        </script>  
+    </body>
+</html>

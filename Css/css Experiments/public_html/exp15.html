@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>WebPage</title>
+        <script>
+            function RightClickDisable()
+            {
+                alert("Not Allowed to Right Click");
+                return false;
+            }
+            function InternetExplorerBrowser()
+            {
+                if(event.button==2)
+                {
+                    RightClickDisable();
+                    return false;
+                }
+            }
+            document.oncontextmenu = new Function("RightClickDisable();return false")
+        </script>
+    </head>
+    <body>
+        <script>
+            window.status("Hello !!!!!")
+        </script>
+        <h1>This is a Webpage</h1>
+        <h4>Press Right Click Button</h4>
+    </body>
+</html>    

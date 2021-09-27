@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Validate Aadhar Number
+        </title>
+        <script>
+            function validate()
+            {
+               aadhar = document.getElementById("numb").value;
+               un = document.getElementById("user").value;
+               var aadharcard = /\d{4}-\d{4}-\d{4}/;
+               if(!aadhar.match(aadharcard))
+               {
+                   alert("Invalid Aadhar number");
+               }
+               else
+               {
+                   alert(un+"Has valid Aadhar Number");
+               }
+            }
+        </script>
+    </head>
+    <body><h1>Enter Username & Password</h1>
+        Enter User Name: <input type="text" id = "user"><br><br>
+        Enter Aadhar Card Number :<input type="text" id="numb">
+        <input type="button" value="check" name="check" onclick="validate(this)">
+    </body>
+</html>

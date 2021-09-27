@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+	function Enable()
+	{
+		document.forms.myform.name.disabled=false
+	}
+	function Disable()
+	{
+		document.forms.myform.name.disabled=true
+	}
+</script>
+</head>
+<body>
+	<form name = "myform">
+	Username: <input type = "text" name ="name">
+	<br><br>
+	<input type = "button" value = "Disable Field Name" onclick ="Disable()">
+	<br><br>
+	<input type = "button" value = "Enable Field Name" onclick ="Enable()">
+	</form>
+</body>
+</html>
+

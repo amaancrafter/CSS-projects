@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+	function MF(choice)
+	{
+		if(choice==1)
+		{
+			document.animal.src='Mango.jpg';
+			MyWindow = window.open("",'infoWindow','height="20",width="20",left="30",right="30");
+			MyWindow.document.write('Nice desert');
+		}
+		if(choice==2)
+		{
+					document.animal.src='orange.jpg';
+					MyWindow = window.open("",'infoWindow','height="20",width="20",left="30",right="30");
+					MyWindow.document.write('Nice animal');
+		}
+		if(choice==3)
+		{
+					document.animal.src='banana.jpg';
+					MyWindow = window.open("",'infoWindow','height="20",width="20",left="30",right="30");
+					MyWindow.document.write('Nice flower');
+		}
+	}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<a>
+<img src = "Mango.jpg" name="desert">
+</a>
+</td>
+<td>
+<a onmouseover = "MF(1)" onmouseout = "MyWindow.close();">
+<b><u>Desert</u></b>
+</a>
+<br><br><br><br>
+<a onmouseover = "MF(2)" onmouseout = "MyWindow.close();">
+<b><u>Koala</u></b>
+</a>
+<br><br><br><br>
+<a onmouseover = "MF(3)" onmouseout = "MyWindow.close();">
+<b><u>Tulip</u></b>
+</a>
+<br><br><br><br>
+</td>
+</tr>
+</table>
+</body>
+</html>

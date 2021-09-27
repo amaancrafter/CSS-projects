@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function VS(formvalue)
+            {
+                item = formvalue.ClassList.selectedIndex;
+                if(formvalue.ClassList.options[item].value=="")
+                {
+                    alert("Please Select a Category");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action = "" name="Form1" onsubmit="return VS(this)">
+            <select name="ClassList">
+                <option value="">Select Item</option>
+                <option value="1">Laptop</option>
+                <option value="2">Server</option>
+                <option value="2">Computer</option>
+                <option value="2">Phone</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>

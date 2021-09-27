@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>
+        Concat and Join
+    </title>
+<script>
+    function concat()
+    {
+        var a1 = new String("Amaan");
+	var a2 = new String(" Ranapurwala");
+	var a3 = a1.concat(a2);
+	alert("Concat : "+a3);
+    }
+    function join()
+    {
+        var fruits = ["Mango","Apple","Pinapple","Chiku"];
+        alert(fruits.join(", "));
+    }
+</script>
+</head>
+<body>
+    <input type="button" value="concat" onclick="concat(this)">
+    <input type="button" value="Join" onclick="join(this)">
+</body>
+</html>

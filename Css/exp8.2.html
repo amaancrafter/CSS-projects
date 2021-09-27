@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+	function Selection()
+	{
+		var str = "You have Selected: ";
+		with(document.forms.myform)
+		{
+			if(car.checked==true)
+				str +="Car";
+			if(bike.checked==true)
+				str +=",Bike";
+			if(truck.checked==true)
+				str +=",Truck";
+			if(aeroplane.checked==true)
+				str +=",Aeroplane";
+		}
+		alert(str);
+	}
+	</script>
+</head>
+<body>
+<hr3>Select Vehicle(s) you can drive</h3>
+<form name = "myform">
+	<input type = "checkbox" name = "car" value = "car">Car<br>
+	<input type = "checkbox" name = "bike" value = "bike">Bike<br>
+	<input type = "checkbox" name = "truck" value = "truck">Truck<br>
+	<input type = "checkbox" name = "aeroplane" value = "aeroplane">Aeroplane<br>
+	<input type = "button" name = "color" value = "Choose Vehicle" onclick = "Selection()">
+</form>
+</body>
+</html>

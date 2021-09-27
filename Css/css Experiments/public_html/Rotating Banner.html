@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Banner Ads</title>
+<script>
+	Banners = new Array('image1.jpg', 'image2.jpg' , 'image3.jpg');
+	count = 0;
+	BannerLink = new Array('geeksforgeeks.org/','google.com/','facebook.com/');
+        banner = 0;
+        function LinkBanner()
+        {
+            document.location.href = "https://www." + BannerLink[count]
+        }
+        function rotate()
+	{
+		if(document.images)
+		{
+			count++;
+			if(count == Banners.length)
+			{
+				count = 0;
+			}
+			document.img1.src = Banners[count];
+			setTimeout("rotate()",5000);
+		}
+	}
+</script>
+</head>
+<body onload = "rotate()">
+<center>
+    <a href="javascript:LinkBanner()"><img src = "image1.jpg" name="img1"></a>
+</center>
+</body>
+</html>
